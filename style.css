@@ -1,0 +1,81 @@
+#body{
+    height: 100lvh;
+    width: 100lvw;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+.size1{
+    height: 50px;
+    width: 50px;
+}
+.size2{
+    height: 45px;
+    width: 45px;
+}
+/* main body template style */
+#body{
+    display: grid;
+    grid-template-columns: 4fr,6fr;
+    grid-template-rows: repeat(2,1.5fr),7fr;
+}
+#sidebar{
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+#header{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#nav-sec{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#main{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+/* sidebar style */
+#sidebar{
+    padding-left: 40px;
+    box-shadow: 5px 2px rgb(172, 182, 168);
+    margin-right: 5px;
+}
+.sidebar-pt1{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-right: 40px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.sidebar-pt1 img{
+    margin-right: 10px;
+}
+.sidebarIcons{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-right: 40px;
+    font-weight: bold;
+    
+}
+#sidebar img{
+    margin-right: 15px;
+}
+.sidebar-pt2{
+    margin-bottom: 100px;
+}
+.sidebar-pt2 div, .sidebar-pt3 div{
+    margin-bottom: 15px;
+}
+.sidebar-pt2 div:hover, .sidebar-pt3 div:hover{
+    background-color: rgb(128, 128, 128);
+    color: white;
+}
+
+/*header style */
+

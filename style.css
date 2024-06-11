@@ -17,7 +17,7 @@ img{
 /* main body template style */
 #body{
     display: grid;
-    grid-template-columns: 4fr,6fr;
+    grid-template-columns: 2.5fr,7.5fr;
     grid-template-rows: repeat(2,1.5fr),7fr;
 }
 #sidebar{
@@ -48,13 +48,10 @@ img{
     font-size: xx-large;
     font-weight: bolder;
     margin-right: 40px;
-    justify-content: space-between;
     margin-bottom: 50px;
     margin-top: 10px;
 }
-.sidebar-pt1 img{
-    margin-right: 10px;
-}
+
 .sidebarIcons{
     display: flex;
     align-items: center;
@@ -78,4 +75,85 @@ img{
 }
 
 /*header style */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 600px;
+    height: 30px;
+    border: 0.01px solid grey;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: rgb(238, 238, 238);
+}
+input:focus{
+    background-color: rgb(233, 233, 233);
+}
+.userProfileDisplay1{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 25px;
+    width: 300px;
+    justify-content: space-between;
+}
 
+/* nav style */
+#nav-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.userProfileDisplay2{
+    display: grid;
+    grid-template-columns: 50px,250px;
+    grid-template-rows: 50px,50px;
+    column-gap: 30px;
+}
+.userProfileDisplay2 img{
+    height: 70px;
+    width: 70px;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.span1{
+    align-self: flex-end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.span2{
+    font-size: 25px;
+    font-weight: bold;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-between;
+}
+.nav div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: bolder;
+}
